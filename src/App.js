@@ -2,14 +2,16 @@ import React from 'react';
 import gql from "graphql-tag";
 import ApolloClient from 'apollo-client';
 import { InMemoryCache } from 'apollo-cache-inmemory';
+import { createHttpLink } from 'apollo-link-http';
 
 import './App.css';
 import SearchForm from './components/SearchForm';
 import PokemonDisplay from './components/PokemonDisplay';
 import PokemonDetails from './components/PokemonDetails';
 
+
 const client = new ApolloClient({
-  uri: "https://pokemon-samdavies.stylindex.now.sh",
+  link: createHttpLink({uri: "https://pokemon-samdavies.stylindex.now.sh",}),
   cache: new InMemoryCache()
 });
 
