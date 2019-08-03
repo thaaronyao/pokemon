@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render test 1`] = `
+<div
+  className="pokemonDisplay"
+>
+  <p>
+    Bulbasaur
+  </p>
+  <div
+    className="placement"
+  >
+    <img
+      className="thumbnail"
+      src="https://img.pokemondb.net/artwork/bulbasaur.jpg"
+    />
+    <br />
+    <button
+      onClick={[Function]}
+    >
+      More Information
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render test 1`] = `
+<div>
+  <div
+    className="details"
+  >
+    <table>
+      <caption>
+        Bulbasaur
+      </caption>
+      <tr>
+        <th>
+          Max HP
+        </th>
+        <th>
+          Max CP
+        </th>
+        <th>
+          number
+        </th>
+        <th>
+          types
+        </th>
+        <th>
+          id
+        </th>
+      </tr>
+      <tr>
+        <td>
+          1071
+        </td>
+        <td>
+          951
+        </td>
+        <td>
+          001
+        </td>
+        <td>
+          Grass Poison
+        </td>
+        <td>
+          UG9rZW1vbjowMDE=
+        </td>
+      </tr>
+    </table>
+    <img
+      src="https://img.pokemondb.net/artwork/bulbasaur.jpg"
+    />
+  </div>
+  <div
+    className="pokemons"
+  >
+    <p>
+      Evolution: 
+    </p>
+  </div>
+  <button>
+    Go Back to Home
+  </button>
+</div>
+`;
