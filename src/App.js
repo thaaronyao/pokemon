@@ -1,14 +1,16 @@
 import React from 'react';
-import './App.css';
 import gql from "graphql-tag";
-import ApolloClient from 'apollo-boost';
+import ApolloClient from 'apollo-client';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 
+import './App.css';
 import SearchForm from './components/SearchForm';
 import PokemonDisplay from './components/PokemonDisplay';
 import PokemonDetails from './components/PokemonDetails';
 
 const client = new ApolloClient({
-  uri: "https://pokemon-samdavies.stylindex.now.sh"
+  uri: "https://pokemon-samdavies.stylindex.now.sh",
+  cache: new InMemoryCache()
 });
 
 class App extends React.PureComponent {
